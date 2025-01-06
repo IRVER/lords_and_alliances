@@ -1,0 +1,81 @@
+/* Contenedor principal */
+.gameboard-container {
+  background: url('../../assets/backgrounds/mainBackground.webp') no-repeat center center fixed;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: auto auto 1fr; /* Header, resources y contenido principal */
+  color: white;
+  font-family: 'Cinzel', serif;
+  gap: 20px; /* Espaciado entre filas */
+}
+
+/* Header */
+.gameboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.1); /* Fondo semitransparente */
+  box-sizing: border-box;
+}
+
+.gameboard-title {
+  font-size: 2.5rem;
+  color: gold;
+  text-shadow: 3px 3px 6px black;
+  margin: 0;
+}
+
+/* Contenedor de recursos */
+.gameboard-resources {
+  display: flex;
+  justify-content: flex-start;
+
+  flex-direction: column;
+  align-items: left;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  color: white;
+  font-size: 1.2rem;
+  gap: 20px; /* Espaciado entre recursos */
+  border: 1px solid gold;
+  border-radius: 8px;
+  width: fit-content; /* Ajustar al contenido */
+  margin-left: 20px; /* Separar del borde izquierdo */
+}
+
+.gameboard-resources div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Contenido principal */
+.dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.dialog button {
+  margin-top: 20px;
+  background: linear-gradient(to right, #8b4513, #d4af37);
+  border: none;
+  color: white;
+  font-size: 1em;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dialog button:hover {
+  background: linear-gradient(to right, #d4af37, #8b4513);
+  box-shadow: 0 0 10px #d4af37;
+}
